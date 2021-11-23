@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Hello world Pedrooooo!' 
                 sh 'ls -l'
-                sh 'mv compile'
+                sh 'mvn compile'
             }
         }
     }
