@@ -8,8 +8,9 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Hello world Pedrooooo!' 
-                sh 'ls -l'
-                sh 'mvn compile'
+                sh 'mvn -B -DskipTests clean package'
+                //sh 'ls -l'
+                //sh 'mvn compile'
             }
         }
     }
